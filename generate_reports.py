@@ -21,6 +21,12 @@ def write_report(msg, report, output_path):
 api = prometheus_api_client.PrometheusConnect(url=config.PROMETHEUS_URL, disable_ssl=True)
 end = datetime.datetime.now()
 start = end - datetime.timedelta(minutes=config.TIMEDELTA)
+
+
+# ec2 = boto3.client('ec2',
+#                    aws_access_key_id=os.environ.get('AWS_ACCESS_KEY'),
+#                    aws_secret_access_key = os.environ.get('AWS_SECRET_KEY'),
+#                    region_name="ap-south-1")
 ec2_client = boto3.client('ec2',region_name = config.AWS_REGION)  # TODO auth using credentials
 
 pod_data_provider = PodDataProvider(api, start_time=start, end_time=end, step=30)
@@ -172,7 +178,6 @@ bad_nodes_by_high_occurrence_of_high_rx_bytes = flag_nodes_by_high_probability_o
 file = open(output_path_prefix + "/bad_node_by_rx_bytes.csv", "w")
 file.write("\n\n\n**********Bad nodes by high occurrence of rx bytes > threshold***************\n\n")
 file.close()
-print(bad_nodes_by_high_occurrence_of_high_rx_bytes)
 bad_nodes_by_high_occurrence_of_high_rx_bytes.to_csv(output_path_prefix + "/bad_node_by_rx_bytes.csv", mode='a',
                                                      index=False)
 for node_name in bad_nodes_by_high_occurrence_of_high_rx_bytes['node name']:
