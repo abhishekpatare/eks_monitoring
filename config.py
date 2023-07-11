@@ -3,10 +3,12 @@ PROMETHEUS_URL = ''
 AWS_REGION = 'us-east-1'
 #time delta in minutes
 TIMEDELTA = 30
-
 #time delta for rate queries in promql
 #it is time over which rate is calculated in minutes
 RATE_DELTA = 2
+
+#minimum duration between two timestamps in seconds
+STEP = 30
 # Multiplication factor of stdev used to calculate expected cpu and memory request
 # expected request = avg usage + POD_REQUEST_MARGIN_FACTOR*stdev usage
 POD_REQUEST_MARGIN_FACTOR = 1

@@ -29,8 +29,8 @@ start = end - datetime.timedelta(minutes=config.TIMEDELTA)
 #                    region_name="ap-south-1")
 ec2_client = boto3.client('ec2',region_name = config.AWS_REGION)  # TODO auth using credentials
 
-pod_data_provider = PodDataProvider(api, start_time=start, end_time=end, step=30)
-node_data_provider = NodeDataProvider(api, start_time=start, end_time=end, step=30)
+pod_data_provider = PodDataProvider(api, start_time=start, end_time=end, step=config.STEP)
+node_data_provider = NodeDataProvider(api, start_time=start, end_time=end, step=config.STEP)
 
 pod_data = pod_data_provider.get_data()
 node_data = node_data_provider.get_data()
