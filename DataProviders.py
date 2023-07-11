@@ -1,6 +1,6 @@
 import pandas as pd
 import re
-
+import config
 
 
 class PodData:
@@ -58,7 +58,7 @@ class PodDataProvider(DataProvider):
         try:
             print("Getting pod cpu usage")
             pod_cpu_usage_res = self.prometheus_api.custom_query_range(
-                query="sum(rate(container_cpu_usage_seconds_total{namespace!='',pod!='',instance!=''}[5m])) by(namespace,pod,instance)",
+                query=f"sum(rate(container_cpu_usage_seconds_total{{namespace!='',pod!='',instance!=''}}[{config.RATE_DELTA}m])) by(namespace,pod,instance)",
                 start_time=self.start_time,
                 end_time=self.end_time,
                 step=self.step
@@ -110,7 +110,7 @@ class PodDataProvider(DataProvider):
         try:
             print("Getting pod rx bytes")
             pod_rx_bytes_res = self.prometheus_api.custom_query_range(
-                query="sum(rate(container_network_receive_bytes_total{namespace!='',pod!='',instance!=''}[5m]))by (namespace,pod,instance)",
+                query=f"sum(rate(container_network_receive_bytes_total{{namespace!='',pod!='',instance!=''}}[{config.RATE_DELTA}m]))by (namespace,pod,instance)",
                 start_time=self.start_time,
                 end_time=self.end_time,
                 step=self.step
@@ -136,7 +136,7 @@ class PodDataProvider(DataProvider):
         try:
             print("Getting pod tx bytes")
             pod_tx_bytes_res = self.prometheus_api.custom_query_range(
-                query="sum(rate(container_network_transmit_bytes_total{namespace!='',pod!='',instance!=''}[5m]))by (namespace,pod,instance)",
+                query=f"sum(rate(container_network_transmit_bytes_total{{namespace!='',pod!='',instance!=''}}[{config.RATE_DELTA}m]))by (namespace,pod,instance)",
                 start_time=self.start_time,
                 end_time=self.end_time,
                 step=self.step
@@ -161,7 +161,7 @@ class PodDataProvider(DataProvider):
         try:
             print("Getting disk total bytes for pods")
             pod_disk_bytes_res = self.prometheus_api.custom_query_range(
-                query="sum(rate(container_fs_reads_bytes_total{namespace!='',pod!='',instance!=''}[5m])+rate(container_fs_writes_bytes_total{namespace!='',pod!='',instance!=''}[5m]))by (pod,namespace,instance)",
+                query=f"sum(rate(container_fs_reads_bytes_total{{namespace!='',pod!='',instance!=''}}[{config.RATE_DELTA}m])+rate(container_fs_writes_bytes_total{{namespace!='',pod!='',instance!=''}}[{config.RATE_DELTA}m]))by (pod,namespace,instance)",
                 start_time=self.start_time,
                 end_time=self.end_time,
                 step=self.step
@@ -403,7 +403,7 @@ class NodeDataProvider(DataProvider):
         try:
             print("Getting node cpu usage")
             node_cpu_usage_res = self.prometheus_api.custom_query_range(
-                query="sum(rate(node_cpu_seconds_total{mode!='idle',mode!='iowait',mode!='steal'}[2m]))by(instance)*on(instance)group_left(nodename) node_uname_info",
+                query=f"sum(rate(node_cpu_seconds_total{{mode!='idle',mode!='iowait',mode!='steal'}}[{config.RATE_DELTA}m]))by(instance)*on(instance)group_left(nodename) node_uname_info",
                 start_time=self.start_time,
                 end_time=self.end_time,
                 step=self.step
@@ -453,7 +453,7 @@ class NodeDataProvider(DataProvider):
         try:
             print("Getting node network rx bytes ")
             node_rx_bytes_res = self.prometheus_api.custom_query_range(
-                query="sum(rate(node_network_receive_bytes_total[2m])) by (instance)*on(instance)group_left(nodename) node_uname_info",
+                query=f"sum(rate(node_network_receive_bytes_total[{config.RATE_DELTA}m])) by (instance)*on(instance)group_left(nodename) node_uname_info",
                 start_time=self.start_time,
                 end_time=self.end_time,
                 step=self.step
@@ -478,7 +478,7 @@ class NodeDataProvider(DataProvider):
         try:
             print("Getting node network tx bytes ")
             node_tx_bytes_res = self.prometheus_api.custom_query_range(
-                query="sum(rate(node_network_transmit_bytes_total[2m])) by (instance)*on(instance)group_left(nodename) node_uname_info",
+                query=f"sum(rate(node_network_transmit_bytes_total[{config.RATE_DELTA}]m])) by (instance)*on(instance)group_left(nodename) node_uname_info",
                 start_time=self.start_time,
                 end_time=self.end_time,
                 step=self.step
@@ -504,7 +504,7 @@ class NodeDataProvider(DataProvider):
         try:
             print("Getting node disk total bytes ")
             node_disk_total_bytes_res = self.prometheus_api.custom_query_range(
-                query="sum(rate(node_disk_written_bytes_total{device=~'nvme...'}[2m]) + rate(node_disk_read_bytes_total{device=~'nvme...'}[2m]))by(instance)*on(instance)group_left(nodename) node_uname_info",
+                query=f"sum(rate(node_disk_written_bytes_total{{device=~'nvme...'}}[{config.RATE_DELTA}m]) + rate(node_disk_read_bytes_total{{device=~'nvme...'}}[{config.RATE_DELTA}m]))by(instance)*on(instance)group_left(nodename) node_uname_info",
                 start_time=self.start_time,
                 end_time=self.end_time,
                 step=self.step

@@ -9,120 +9,120 @@ ip-10-0-124-101,r6i.xlarge,33115455488.0,1.0
 ip-10-0-137-136,r5.xlarge,33174179840.0,1.0
 ip-10-0-140-169,r5.xlarge,33174179840.0,1.0
 0,1,2,3
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,cost-analyzer-prometheus-server-84566b5c77-t5cwh,14816862678.032787,0
-max memory usage,cost-analyzer-prometheus-server-84566b5c77-t5cwh,15014002688,0
-max cpu above request,cost-analyzer-prometheus-server-84566b5c77-t5cwh,14816862678.032787,0
+max avg memory,cost-analyzer-prometheus-server-84566b5c77-t5cwh,14965689830.819672,0
+max memory usage,cost-analyzer-prometheus-server-84566b5c77-t5cwh,15427624960,0
+max cpu above request,cost-analyzer-prometheus-server-84566b5c77-t5cwh,14965689830.819672,0
 0,1,2,3
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,autocomplete-st-deployment-76fcdcc9f5-9tt5r,27456549468.32787,44023414784
-max memory usage,autocomplete-st-deployment-76fcdcc9f5-9tt5r,27456585728,44023414784
-max cpu above request,aws-node-8k8hh,422849888.52459013,0
+max avg memory,autocomplete-st-deployment-76fcdcc9f5-9tt5r,27456111666.360657,44023414784
+max memory usage,autocomplete-st-deployment-76fcdcc9f5-9tt5r,27456421888,44023414784
+max cpu above request,aws-node-8k8hh,425331997.3770492,0
 0,1,2,3
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,autocomplete-st-deployment-76fcdcc9f5-lxmcx,23648958564.72131,44023414784
-max memory usage,autocomplete-st-deployment-76fcdcc9f5-lxmcx,23649144832,44023414784
-max cpu above request,aws-node-pshr9,458457088.0,0
+max avg memory,autocomplete-st-deployment-76fcdcc9f5-lxmcx,23649209562.229507,44023414784
+max memory usage,autocomplete-st-deployment-76fcdcc9f5-lxmcx,23649669120,44023414784
+max cpu above request,aws-node-pshr9,460036263.86885244,0
 0,1,2,3
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,autocomplete-gen-deployment-5f7b49b869-zplcc,27973931410.885246,44023414784
-max memory usage,autocomplete-gen-deployment-5f7b49b869-zplcc,27974897664,44023414784
-max cpu above request,aws-node-xrmcd,468603417.1803279,0
+max avg memory,autocomplete-gen-deployment-5f7b49b869-zplcc,27974473425.836067,44023414784
+max memory usage,autocomplete-gen-deployment-5f7b49b869-zplcc,27975979008,44023414784
+max cpu above request,aws-node-xrmcd,470742267.8032787,0
 0,1,2,3
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,webhooks-hbl-uat-lst-deployment-57759c8df4-sjdz7,48322757078.03278,57073741824
-max memory usage,webhooks-hbl-uat-lst-deployment-57759c8df4-sjdz7,48322981888,57073741824
-max cpu above request,aws-node-nqlfd,366661161.9672131,0
+max avg memory,webhooks-hbl-uat-lst-deployment-57759c8df4-sjdz7,48327883255.60656,57073741824
+max memory usage,webhooks-hbl-uat-lst-deployment-57759c8df4-sjdz7,48336519168,57073741824
+max cpu above request,aws-node-nqlfd,368490596.72131145,0
 0,1,2,3
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,webhooks-hbl-uat-lst-deployment-57759c8df4-hgqwz,48529286597.2459,57073741824
-max memory usage,webhooks-hbl-uat-lst-deployment-57759c8df4-hgqwz,48529539072,57073741824
-max cpu above request,aws-node-dpfx2,375959283.40983605,0
+max avg memory,webhooks-hbl-uat-lst-deployment-57759c8df4-hgqwz,48531645826.09836,57073741824
+max memory usage,webhooks-hbl-uat-lst-deployment-57759c8df4-hgqwz,48531886080,57073741824
+max cpu above request,aws-node-dpfx2,377564109.6393443,0
 0,1,2,3
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,autocomplete-gen-deployment-5f7b49b869-75hn5,23076229321.442623,44023414784
-max memory usage,autocomplete-gen-deployment-5f7b49b869-75hn5,23077007360,44023414784
-max cpu above request,aws-node-csj9g,373985212.852459,0
+max avg memory,autocomplete-gen-deployment-5f7b49b869-75hn5,23076499120.262295,44023414784
+max memory usage,autocomplete-gen-deployment-5f7b49b869-75hn5,23077138432,44023414784
+max cpu above request,aws-node-csj9g,376413133.6393443,0
 
 
 
 **********Bad nodes by high avg memory usage***************
 
 node name,instance type,cpu limit,Avg CPU Utilization
-ip-10-0-103-38,r6i.xlarge,4.0,0.1040242329195756
-ip-10-0-108-164,r6i.xlarge,4.0,0.10075819672131568
-ip-10-0-112-50,r5.xlarge,4.0,0.02310063752276823
-ip-10-0-113-129,r6i.xlarge,4.0,0.013808287795992557
-ip-10-0-124-101,r6i.xlarge,4.0,0.0264481489071166
-ip-10-0-137-136,r5.xlarge,4.0,0.020038251366119867
-ip-10-0-140-169,r5.xlarge,4.0,0.026684858082708825
+ip-10-0-103-38,r6i.xlarge,4.0,0.11875626282799133
+ip-10-0-108-164,r6i.xlarge,4.0,0.10785519125683096
+ip-10-0-112-50,r5.xlarge,4.0,0.0320100182149363
+ip-10-0-113-129,r6i.xlarge,4.0,0.019881602914389684
+ip-10-0-124-101,r6i.xlarge,4.0,0.038644129404720985
+ip-10-0-137-136,r5.xlarge,4.0,0.034827416600576366
+ip-10-0-140-169,r5.xlarge,4.0,0.04616473926454256
 
 
 Node name: , ip-10-0-103-38
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,cost-analyzer-prometheus-server-84566b5c77-t5cwh,14816862678.032787,0
-max memory usage,cost-analyzer-prometheus-server-84566b5c77-t5cwh,15014002688,0
-max cpu above request,cost-analyzer-prometheus-server-84566b5c77-t5cwh,14816862678.032787,0
+max avg memory,cost-analyzer-prometheus-server-84566b5c77-t5cwh,14965689830.819672,0
+max memory usage,cost-analyzer-prometheus-server-84566b5c77-t5cwh,15427624960,0
+max cpu above request,cost-analyzer-prometheus-server-84566b5c77-t5cwh,14965689830.819672,0
 
 
 Node name: , ip-10-0-108-164
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,autocomplete-st-deployment-76fcdcc9f5-9tt5r,27456549468.32787,44023414784
-max memory usage,autocomplete-st-deployment-76fcdcc9f5-9tt5r,27456585728,44023414784
-max cpu above request,aws-node-8k8hh,422849888.52459013,0
+max avg memory,autocomplete-st-deployment-76fcdcc9f5-9tt5r,27456111666.360657,44023414784
+max memory usage,autocomplete-st-deployment-76fcdcc9f5-9tt5r,27456421888,44023414784
+max cpu above request,aws-node-8k8hh,425331997.3770492,0
 
 
 Node name: , ip-10-0-112-50
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,autocomplete-st-deployment-76fcdcc9f5-lxmcx,23648958564.72131,44023414784
-max memory usage,autocomplete-st-deployment-76fcdcc9f5-lxmcx,23649144832,44023414784
-max cpu above request,aws-node-pshr9,458457088.0,0
+max avg memory,autocomplete-st-deployment-76fcdcc9f5-lxmcx,23649209562.229507,44023414784
+max memory usage,autocomplete-st-deployment-76fcdcc9f5-lxmcx,23649669120,44023414784
+max cpu above request,aws-node-pshr9,460036263.86885244,0
 
 
 Node name: , ip-10-0-113-129
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,autocomplete-gen-deployment-5f7b49b869-zplcc,27973931410.885246,44023414784
-max memory usage,autocomplete-gen-deployment-5f7b49b869-zplcc,27974897664,44023414784
-max cpu above request,aws-node-xrmcd,468603417.1803279,0
+max avg memory,autocomplete-gen-deployment-5f7b49b869-zplcc,27974473425.836067,44023414784
+max memory usage,autocomplete-gen-deployment-5f7b49b869-zplcc,27975979008,44023414784
+max cpu above request,aws-node-xrmcd,470742267.8032787,0
 
 
 Node name: , ip-10-0-124-101
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,webhooks-hbl-uat-lst-deployment-57759c8df4-sjdz7,48322757078.03278,57073741824
-max memory usage,webhooks-hbl-uat-lst-deployment-57759c8df4-sjdz7,48322981888,57073741824
-max cpu above request,aws-node-nqlfd,366661161.9672131,0
+max avg memory,webhooks-hbl-uat-lst-deployment-57759c8df4-sjdz7,48327883255.60656,57073741824
+max memory usage,webhooks-hbl-uat-lst-deployment-57759c8df4-sjdz7,48336519168,57073741824
+max cpu above request,aws-node-nqlfd,368490596.72131145,0
 
 
 Node name: , ip-10-0-137-136
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,webhooks-hbl-uat-lst-deployment-57759c8df4-hgqwz,48529286597.2459,57073741824
-max memory usage,webhooks-hbl-uat-lst-deployment-57759c8df4-hgqwz,48529539072,57073741824
-max cpu above request,aws-node-dpfx2,375959283.40983605,0
+max avg memory,webhooks-hbl-uat-lst-deployment-57759c8df4-hgqwz,48531645826.09836,57073741824
+max memory usage,webhooks-hbl-uat-lst-deployment-57759c8df4-hgqwz,48531886080,57073741824
+max cpu above request,aws-node-dpfx2,377564109.6393443,0
 
 
 Node name: , ip-10-0-140-169
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,memory,request
-max avg memory,autocomplete-gen-deployment-5f7b49b869-75hn5,23076229321.442623,44023414784
-max memory usage,autocomplete-gen-deployment-5f7b49b869-75hn5,23077007360,44023414784
-max cpu above request,aws-node-csj9g,373985212.852459,0
+max avg memory,autocomplete-gen-deployment-5f7b49b869-75hn5,23076499120.262295,44023414784
+max memory usage,autocomplete-gen-deployment-5f7b49b869-75hn5,23077138432,44023414784
+max cpu above request,aws-node-csj9g,376413133.6393443,0

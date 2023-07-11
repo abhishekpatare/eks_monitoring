@@ -234,7 +234,7 @@ bad_nodes_by_high_disk_bytes_avg = flag_nodes_by_high_avg_disk_total_bytes(node_
                                                                            config.NODE_DISK_BYTES_USAGE_THRESHOLD,
                                                                            ebs_bandwidths
                                                                            )
-file = open(output_path_prefix + "/bad_node_by_disk_total_bytes.csv", "w")
+file = open(output_path_prefix + "/bad_node_by_disk_total_bytes.csv", "a")
 file.write("\n\n\n**********Bad nodes by high avg disk total bytes***************\n\n")
 file.close()
 bad_nodes_by_high_disk_bytes_avg.to_csv(output_path_prefix + "/bad_node_by_disk_total_bytes.csv", mode='a', index=False)

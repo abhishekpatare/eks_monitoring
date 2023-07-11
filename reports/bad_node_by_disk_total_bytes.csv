@@ -1,69 +1,122 @@
 
 
 
-**********Bad nodes by high avg disk total bytes***************
+**********Bad nodes by high occurrence of disk total bytes > threshold***************
 
-node name,instance type,node bandwidth baselimit(bytes/sec),Avg Network Transmit rate (bytes/sec)
-ip-10-0-103-38,r6i.xlarge,156250000,227161.05141985425
-ip-10-0-108-164,r6i.xlarge,156250000,53956.126775956276
-ip-10-0-112-50,r5.xlarge,143750000,9664.116575591983
-ip-10-0-113-129,r6i.xlarge,156250000,10304.06994535519
-ip-10-0-124-101,r6i.xlarge,156250000,12016.327822286292
-ip-10-0-137-136,r5.xlarge,143750000,11848.649908925318
-ip-10-0-140-169,r5.xlarge,143750000,13800.832116181053
+node name,instance type,node baseline bandwidth,High disk read/write Bytes Probability
+ip-10-0-103-38,r6i.xlarge,156250000,1.0
+ip-10-0-108-164,r6i.xlarge,156250000,1.0
+ip-10-0-112-50,r5.xlarge,143750000,1.0
+ip-10-0-113-129,r6i.xlarge,156250000,1.0
+ip-10-0-124-101,r6i.xlarge,156250000,1.0
+ip-10-0-137-136,r5.xlarge,143750000,1.0
+ip-10-0-140-169,r5.xlarge,143750000,1.0
 
 
 Node name: , ip-10-0-103-38
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,disk total bytes,
-max avg rx bytes,cost-analyzer-7bbdc9cd4d-jkst7,169216.7072792178,728464.302605988
-max rx bytes,cost-analyzer-7bbdc9cd4d-jkst7,728464.302605988,728464.302605988
+max avg rx bytes,cert-manager-79c5f9946-9bw9p,0.0,0.0
+max rx bytes,cert-manager-79c5f9946-9bw9p,0.0,0.0
 
 
 Node name: , ip-10-0-108-164
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
-__,pod_name,disk total bytes,
-max avg rx bytes,dashboard-metrics-scraper-8574d756f9-qfpxh,22700.926128305007,24810.358457069196
-max rx bytes,dashboard-metrics-scraper-8574d756f9-qfpxh,24810.358457069196,24810.358457069196
 
 
 Node name: , ip-10-0-112-50
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
-__,pod_name,disk total bytes,
-max avg rx bytes,lacework-agent-zlnhk,2985.730703184434,3238.086289456827
-max rx bytes,lacework-agent-zlnhk,3238.086289456827,3238.086289456827
 
 
 Node name: , ip-10-0-113-129
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,disk total bytes,
-max avg rx bytes,lacework-agent-94c9q,3392.6578575827048,6142.570791389037
-max rx bytes,lacework-agent-94c9q,6142.570791389037,6142.570791389037
+max avg rx bytes,kube-proxy-hw86k,0.0,0.0
+max rx bytes,kube-proxy-hw86k,0.0,0.0
 
 
 Node name: , ip-10-0-124-101
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,disk total bytes,
-max avg rx bytes,lacework-agent-fxl5d,3148.9375809092494,3765.8151373013898
-max rx bytes,lacework-agent-fxl5d,3765.8151373013898,3765.8151373013898
+max avg rx bytes,lacework-agent-fxl5d,1577.5248175312106,1577.5248175312106
+max rx bytes,lacework-agent-fxl5d,1577.5248175312106,1577.5248175312106
 
 
 Node name: , ip-10-0-137-136
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,disk total bytes,
-max avg rx bytes,lacework-agent-xz8g8,2883.8001178024642,3135.131968848822
-max rx bytes,lacework-agent-xz8g8,3135.131968848822,3135.131968848822
+max avg rx bytes,prometheus-node-exporter-jbprf,0.0,0.0
+max rx bytes,prometheus-node-exporter-jbprf,0.0,0.0
 
 
 Node name: , ip-10-0-140-169
 
-Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
 __,pod_name,disk total bytes,
-max avg rx bytes,lacework-agent-xlj4j,3110.7805253567944,3421.5458934288336
-max rx bytes,lacework-agent-xlj4j,3421.5458934288336,3421.5458934288336
+max avg rx bytes,lacework-agent-xlj4j,1659.460056719826,1659.460056719826
+max rx bytes,lacework-agent-xlj4j,1659.460056719826,1659.460056719826
+
+
+
+**********Bad nodes by high avg disk total bytes***************
+
+node name,instance type,node bandwidth baselimit(bytes/sec),Avg Network Transmit rate (bytes/sec)
+ip-10-0-103-38,r6i.xlarge,156250000,185817.6768327108
+ip-10-0-108-164,r6i.xlarge,156250000,54235.25537340621
+ip-10-0-112-50,r5.xlarge,143750000,10086.493260473588
+ip-10-0-113-129,r6i.xlarge,156250000,10062.618579234973
+ip-10-0-124-101,r6i.xlarge,156250000,13369.718876556044
+ip-10-0-137-136,r5.xlarge,143750000,13207.035040517907
+ip-10-0-140-169,r5.xlarge,143750000,14914.301031029385
+
+
+Node name: , ip-10-0-103-38
+
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
+__,pod_name,disk total bytes,
+max avg rx bytes,cert-manager-79c5f9946-9bw9p,0.0,0.0
+max rx bytes,cert-manager-79c5f9946-9bw9p,0.0,0.0
+
+
+Node name: , ip-10-0-108-164
+
+
+
+Node name: , ip-10-0-112-50
+
+
+
+Node name: , ip-10-0-113-129
+
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
+__,pod_name,disk total bytes,
+max avg rx bytes,kube-proxy-hw86k,0.0,0.0
+max rx bytes,kube-proxy-hw86k,0.0,0.0
+
+
+Node name: , ip-10-0-124-101
+
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
+__,pod_name,disk total bytes,
+max avg rx bytes,lacework-agent-fxl5d,1577.5248175312106,1577.5248175312106
+max rx bytes,lacework-agent-fxl5d,1577.5248175312106,1577.5248175312106
+
+
+Node name: , ip-10-0-137-136
+
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
+__,pod_name,disk total bytes,
+max avg rx bytes,prometheus-node-exporter-jbprf,0.0,0.0
+max rx bytes,prometheus-node-exporter-jbprf,0.0,0.0
+
+
+Node name: , ip-10-0-140-169
+
+Window :,2023-07-11 11:57:34,2023-07-11 12:27:34,
+__,pod_name,disk total bytes,
+max avg rx bytes,lacework-agent-xlj4j,1659.460056719826,1659.460056719826
+max rx bytes,lacework-agent-xlj4j,1659.460056719826,1659.460056719826
