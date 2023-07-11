@@ -1,0 +1,178 @@
+************Bad nodes by high occurrence of cpu > threshold************
+
+node name,instance type,cpu limit,High CPU Utilization Probability
+ip-10-0-103-38,r6i.xlarge,4.0,1.0
+ip-10-0-108-164,r6i.xlarge,4.0,1.0
+ip-10-0-112-50,r5.xlarge,4.0,1.0
+ip-10-0-113-129,r6i.xlarge,4.0,1.0
+ip-10-0-124-101,r6i.xlarge,4.0,1.0
+ip-10-0-137-136,r5.xlarge,4.0,1.0
+ip-10-0-140-169,r5.xlarge,4.0,1.0
+
+
+Node name: , ip-10-0-103-38
+
+0,1,2,3
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,cost-analyzer-prometheus-server-84566b5c77-t5cwh,0.2327398405718216,0
+max cpu usage,cost-analyzer-prometheus-server-84566b5c77-t5cwh,0.4080630032532139,0
+max cpu above request,cost-analyzer-prometheus-server-84566b5c77-t5cwh,0.2327398405718216,0
+
+
+Node name: , ip-10-0-108-164
+
+0,1,2,3
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,cert-manager-webhook-6d4c5c44bb-cnjmc,0.3369710741635802,0
+max cpu usage,cert-manager-webhook-6d4c5c44bb-cnjmc,0.34815302306702,0
+max cpu above request,cert-manager-webhook-6d4c5c44bb-cnjmc,0.3369710741635802,0
+
+
+Node name: , ip-10-0-112-50
+
+0,1,2,3
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,filebeat-rh4fj,0.02910522086392884,0.24
+max cpu usage,filebeat-rh4fj,0.030839239733011913,0.24
+
+
+Node name: , ip-10-0-113-129
+
+0,1,2,3
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,autocomplete-gen-deployment-5f7b49b869-zplcc,0.0215444009547992,4.199999999999999
+max cpu usage,lacework-agent-94c9q,0.07739508066706768,0.02
+max cpu above request,lacework-agent-94c9q,0.01707293189535274,0.02
+
+
+Node name: , ip-10-0-124-101
+
+0,1,2,3
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,filebeat-22zfp,0.18709898921366078,0.24
+max cpu usage,filebeat-22zfp,0.19734548548975162,0.24
+
+
+Node name: , ip-10-0-137-136
+
+0,1,2,3
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,webhooks-hbl-uat-lst-deployment-57759c8df4-hgqwz,0.03593523476395284,6.2
+max cpu usage,webhooks-hbl-uat-lst-deployment-57759c8df4-hgqwz,0.0524225730389485,6.2
+
+
+Node name: , ip-10-0-140-169
+
+0,1,2,3
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,entity-library-deployment-6bfc9967d5-vsh6w,0.04544328297701631,2.2
+max cpu usage,entity-library-deployment-6bfc9967d5-vsh6w,0.06806778068879815,2.2
+max cpu above request,lacework-agent-xlj4j,0.017475910098628037,0.02
+
+
+
+**********Bad nodes by high avg cpu usage***************
+
+node name,instance type,cpu limit,Avg CPU Utilization
+ip-10-0-103-38,r6i.xlarge,4.0,0.1040242329195756
+ip-10-0-108-164,r6i.xlarge,4.0,0.10075819672131568
+ip-10-0-112-50,r5.xlarge,4.0,0.02310063752276823
+ip-10-0-113-129,r6i.xlarge,4.0,0.013808287795992557
+ip-10-0-124-101,r6i.xlarge,4.0,0.0264481489071166
+ip-10-0-137-136,r5.xlarge,4.0,0.020038251366119867
+ip-10-0-140-169,r5.xlarge,4.0,0.026684858082708825
+
+
+Node name: , ip-10-0-103-38
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,cost-analyzer-prometheus-server-84566b5c77-t5cwh,0.2327398405718216,0
+max cpu usage,cost-analyzer-prometheus-server-84566b5c77-t5cwh,0.4080630032532139,0
+max cpu above request,cost-analyzer-prometheus-server-84566b5c77-t5cwh,0.2327398405718216,0
+
+
+Node name: , ip-10-0-108-164
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,cert-manager-webhook-6d4c5c44bb-cnjmc,0.3369710741635802,0
+max cpu usage,cert-manager-webhook-6d4c5c44bb-cnjmc,0.34815302306702,0
+max cpu above request,cert-manager-webhook-6d4c5c44bb-cnjmc,0.3369710741635802,0
+
+
+Node name: , ip-10-0-112-50
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,filebeat-rh4fj,0.02910522086392884,0.24
+max cpu usage,filebeat-rh4fj,0.030839239733011913,0.24
+
+
+Node name: , ip-10-0-113-129
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,autocomplete-gen-deployment-5f7b49b869-zplcc,0.0215444009547992,4.199999999999999
+max cpu usage,lacework-agent-94c9q,0.07739508066706768,0.02
+max cpu above request,lacework-agent-94c9q,0.01707293189535274,0.02
+
+
+Node name: , ip-10-0-124-101
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,filebeat-22zfp,0.18709898921366078,0.24
+max cpu usage,filebeat-22zfp,0.19734548548975162,0.24
+
+
+Node name: , ip-10-0-137-136
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,webhooks-hbl-uat-lst-deployment-57759c8df4-hgqwz,0.03593523476395284,6.2
+max cpu usage,webhooks-hbl-uat-lst-deployment-57759c8df4-hgqwz,0.0524225730389485,6.2
+
+
+Node name: , ip-10-0-140-169
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,cpu,request
+max avg cpu,entity-library-deployment-6bfc9967d5-vsh6w,0.04544328297701631,2.2
+max cpu usage,entity-library-deployment-6bfc9967d5-vsh6w,0.06806778068879815,2.2
+max cpu above request,lacework-agent-xlj4j,0.017475910098628037,0.02
+
+
+Node name: , ip-10-0-103-38
+
+
+
+Node name: , ip-10-0-108-164
+
+
+
+Node name: , ip-10-0-112-50
+
+
+
+Node name: , ip-10-0-113-129
+
+
+
+Node name: , ip-10-0-124-101
+
+
+
+Node name: , ip-10-0-137-136
+
+
+
+Node name: , ip-10-0-140-169
+

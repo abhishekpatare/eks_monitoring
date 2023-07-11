@@ -1,0 +1,138 @@
+
+
+
+**********Bad nodes by high occurrence of rx bytes > threshold***************
+
+node name,instance type,node baseline bandwidth,High Network Received Bytes Probability
+ip-10-0-103-38,r6i.xlarge,195250000.0,1.0
+ip-10-0-108-164,r6i.xlarge,195250000.0,1.0
+ip-10-0-112-50,r5.xlarge,156250000.0,1.0
+ip-10-0-113-129,r6i.xlarge,195250000.0,1.0
+ip-10-0-124-101,r6i.xlarge,195250000.0,1.0
+ip-10-0-137-136,r5.xlarge,156250000.0,1.0
+ip-10-0-140-169,r5.xlarge,156250000.0,1.0
+
+
+Node name: , ip-10-0-103-38
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,aws-node-c82bh,2002334.8476838805,2081573.1432189257
+max rx bytes,ebs-csi-node-pdxf9,2150428.0926463585,2150428.0926463585
+
+
+Node name: , ip-10-0-108-164
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,ebs-csi-node-dj9r8,1782261.9561899297,1861427.789813517
+max rx bytes,prometheus-node-exporter-h582k,1876572.846243987,1876572.846243987
+
+
+Node name: , ip-10-0-112-50
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,aws-node-pshr9,25109.60933758359,35242.00921379753
+max rx bytes,lacework-agent-zlnhk,37749.78381494559,37749.78381494559
+
+
+Node name: , ip-10-0-113-129
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,prometheus-node-exporter-s45bx,29836.989476434064,126671.83527993501
+max rx bytes,lacework-agent-94c9q,128647.06981877737,128647.06981877737
+
+
+Node name: , ip-10-0-124-101
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,kube-proxy-9chzt,150948.28722438004,253370.83198041812
+max rx bytes,prometheus-node-exporter-bcdgt,254767.75532237932,254767.75532237932
+
+
+Node name: , ip-10-0-137-136
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,kube-proxy-4kwlc,68976.90395322762,89953.66071951351
+max rx bytes,aws-node-dpfx2,91575.34209963652,91575.34209963652
+
+
+Node name: , ip-10-0-140-169
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,prometheus-node-exporter-68bz9,89134.70892554021,104642.10005898068
+max rx bytes,kube-proxy-mkl2h,104807.72382802787,104807.72382802787
+
+
+
+**********Bad nodes by high avg rx bytes***************
+
+node name,instance type,node bandwidth baselimit(bytes/sec),Avg Network Received rate (bytes/sec)
+ip-10-0-103-38,r6i.xlarge,195250000.0,2011432.2232893484
+ip-10-0-108-164,r6i.xlarge,195250000.0,1790944.1564663022
+ip-10-0-112-50,r5.xlarge,156250000.0,25411.76994535519
+ip-10-0-113-129,r6i.xlarge,195250000.0,29416.25191256831
+ip-10-0-124-101,r6i.xlarge,195250000.0,149763.20488399453
+ip-10-0-137-136,r5.xlarge,156250000.0,69768.7276867031
+ip-10-0-140-169,r5.xlarge,156250000.0,89770.75019395596
+
+
+Node name: , ip-10-0-103-38
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,aws-node-c82bh,2002334.8476838805,2081573.1432189257
+max rx bytes,ebs-csi-node-pdxf9,2150428.0926463585,2150428.0926463585
+
+
+Node name: , ip-10-0-108-164
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,ebs-csi-node-dj9r8,1782261.9561899297,1861427.789813517
+max rx bytes,prometheus-node-exporter-h582k,1876572.846243987,1876572.846243987
+
+
+Node name: , ip-10-0-112-50
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,aws-node-pshr9,25109.60933758359,35242.00921379753
+max rx bytes,lacework-agent-zlnhk,37749.78381494559,37749.78381494559
+
+
+Node name: , ip-10-0-113-129
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,prometheus-node-exporter-s45bx,29836.989476434064,126671.83527993501
+max rx bytes,lacework-agent-94c9q,128647.06981877737,128647.06981877737
+
+
+Node name: , ip-10-0-124-101
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,kube-proxy-9chzt,150948.28722438004,253370.83198041812
+max rx bytes,prometheus-node-exporter-bcdgt,254767.75532237932,254767.75532237932
+
+
+Node name: , ip-10-0-137-136
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,kube-proxy-4kwlc,68976.90395322762,89953.66071951351
+max rx bytes,aws-node-dpfx2,91575.34209963652,91575.34209963652
+
+
+Node name: , ip-10-0-140-169
+
+Window :,2023-07-11 10:59:20,2023-07-11 11:29:20,
+__,pod_name,rx bytes,
+max avg rx bytes,prometheus-node-exporter-68bz9,89134.70892554021,104642.10005898068
+max rx bytes,kube-proxy-mkl2h,104807.72382802787,104807.72382802787
